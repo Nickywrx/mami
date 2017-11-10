@@ -1,0 +1,173 @@
+ /*个人信息头部 */
+ .person-info{
+  background-color: #F5F5F5;
+ }
+.person-info .header{
+  position: relative;
+  padding: 0.3rem 0.4rem 0.3rem 0.68rem;
+  background-color: #e6e6e6;
+}
+.person-info .header .tips_icon{
+  position: absolute;
+  left: 0.3rem;
+  top: 0.35rem;
+  width: 0.28rem;
+  height: 0.28rem;
+  border-radius: 50%;
+  background: url('../image/tips-icon.jpg') no-repeat center center;
+  background-size: 0.28rem 0.28rem;
+  -webkit-background-size: 0.28rem 0.28rem;
+}
+.person-info .header .tips_text{
+  font-size: 0.28rem;
+  color: #808080;
+}
+ /* 个人信息内容 */
+.person-info .con{
+  background-color: #F5F5F5;
+  margin-bottom: 0.9rem;
+}
+.person-info .con .info-title{
+  height: 1.1rem;
+  line-height: 1.1rem;
+  margin-top: 0.2rem;
+  padding-left: 0.2rem;
+  font-size: 0.3rem;
+  color: #fff;
+  background-color: #369EF5;
+ }
+.person-info .con .info-item{
+  position: relative;
+  display: flex;
+  height: 1rem;
+  line-height: 1rem;
+  padding-left: 0.3rem;
+  font-size: 0.3rem;
+  background-color: #fff;
+}
+.person-info .con .info-item::after{
+  content: "";
+  pointer-events: none; /* 防止点击触发 */
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transform(scale(0.5));
+  -webkit-transform-origin: 0 0;
+  transform(scale(0.5));
+  transform-origin: 0 0;
+}
+.con .info-item label{
+  flex:1.6;
+  color: #666666;
+}
+.con .info-item .info-text{
+  flex:4;
+  padding-right: 0.32rem;
+  text-align: right;
+  color: #1a1a1a;
+  font-size: 0.3rem;
+}
+.person-info .con .info-item .info-text.education,
+.person-info .con .info-item .info-text.linkman{
+  padding-right: 0.85rem;
+  color: #b3b3b3;
+}
+.person-info .con .info-education::before,
+.person-info .con .info-linkman::before{
+  content: '';
+  position: absolute;
+  top: 0.35rem;
+  right: 0.32rem;
+  width: 0.2rem;
+  height: 0.3rem;
+  background: url('../image/arrow.jpg') no-repeat center center;
+  background-size: 0.2rem 0.3rem;
+  -webkit-background-size: 0.2rem 0.3rem;
+}
+.con .info-item.info-address{
+    padding-right: 0.45rem;
+}
+.con .info-item.info-address::before{
+  content: '';
+  position: absolute;
+  top: 0.35rem;
+  right: 0.32rem;
+  width: 0.2rem;
+  height: 0.3rem;
+  background: url('../image/arrow.jpg') no-repeat center center;
+  background-size: 0.2rem 0.3rem;
+  -webkit-background-size: 0.2rem 0.3rem;
+}
+.con .detail-addr{
+  position: relative;
+  padding-bottom: 0.6rem;
+  background-color: #fff;
+}
+.con .detail-addr .home-detail-addr,
+.con .detail-addr .work-detail-addr{
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  padding-left: 0.3rem;
+  font-size: 0.3rem;
+}
+.con .detail-addr::after{
+  content: "";
+  pointer-events: none; /* 防止点击触发 */
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transform(scale(0.5));
+  -webkit-transform-origin: 0 0;
+  transform(scale(0.5));
+  transform-origin: 0 0;
+}
+.con .detail-addr.work::after{
+  content: "";
+  pointer-events: none; /* 防止点击触发 */
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 0px;
+  left: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transform(scale(0.5));
+  -webkit-transform-origin: 0 0;
+  transform(scale(0.5));
+  transform-origin: 0 0;
+}
+/*联系人*/
+.con .info-item.info-linkman label{
+    color: #369EF5;
+}
+.person-info .con .info-item.info-linkname::after{
+    height: 0px;
+}
+.person-info .con .info-item.info-linknum-second::after{
+    height: 0px;
+}
+/*个人信息底部*/
+.person-info .footer{
+  padding: 0.3rem;
+  font-size: 0.25rem;
+}
+/*下一步按钮*/
+.footer .btn-submit{
+  display: block;
+  height: 0.84rem;
+  line-height: 0.884rem;
+  text-align: center;
+  font-size: 0.34rem;
+  color: #fff;
+  background-color: #369EF5;
+  border-radius: 0.1rem;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>个人信息</title>
+    <script src="js/rem.js"></script>
+    <link rel="stylesheet" href="./css/LArea.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/mami-info.css">
+</head>
+<body>
+  <div class="person-info">
+    <!-- 注册头部 -->
+    <div class="header">
+        <p class="tips">
+            <i class="tips_icon"></i>
+            <span class="tips_text">请填写您的真实有效的信息，有助于我们更加全面的进行信用评估！</span>
+        </p>
+    </div>
+    <!-- 注册页内容 -->
+    <div class="con">
+        <!-- 基础信息 -->
+       <div class="con-list">
+        <div class="info-title">
+            基础信息
+        </div>
+        <div class="info-item">
+            <label for="username">姓名</label>
+            <input type="text" id="username" class="info-text username" placeholder="请填写您的姓名">
+        </div>
+        <div class="info-item">
+            <label for="id-cart">身份证号</label>
+            <input type="text" id="id-cart" class="info-text id-cart" placeholder="请输入14或18位身份证号">
+        </div>
+        <div class="info-item">
+            <label for="phone">手机号</label>
+            <input type="text" id="phone" class="info-text phone" placeholder="请输入您的手机号码">
+        </div>
+         <div class="info-item info-education">
+            <input type="hidden" value="" id="education-val">
+            <label for="education">学历</label>
+            <select class="info-text education" id="education" dir="rtl">
+                <option value="">请选择</option>
+                <option value="1">大专</option>
+                <option value="2">本科</option>
+            </select>
+        </div>
+         <div class="info-item">
+            <label for="school">学校</label>
+            <input type="text" id="school" class="info-text school" placeholder="请输入您的学校名称">
+        </div>
+      </div>
+      <!-- 地址信息 -->
+      <div class="con-list">
+        <div class="info-title">
+            地址信息
+        </div>
+        <div class="info-item info-address">
+            <label for="home-address">家庭住址</label>
+            <input type="text" id="home-address" class="info-text home-address provice" placeholder="请选择地区" readonly="readonly">
+        </div>
+        <p class="detail-addr">
+            <input class="home-detail-addr" placeholder="请填写详细地址，不少于5个字">
+        </p>
+        <div class="info-item info-address">
+            <label for="work-address">工作住址</label>
+            <input type="text" id="work-address" class="info-text work-address provice" placeholder="请选择地区" readonly="readonly">
+        </div>
+        <p class="detail-addr work">
+            <input class="work-detail-addr" placeholder="请填写详细地址，不少于5个字">
+        </p>
+      </div>
+
+      <!-- 联系人 -->
+      <div class="con-list">
+        <div class="info-title">
+            联系人
+        </div>
+        <!-- 紧急联系人一 -->
+         <div class="info-item info-linkman">
+            <input type="hidden" value="" id="linkman-first-val">
+            <label for="linkman">紧急联系人一</label>
+            <select class="info-text linkman" id="linkman-first" dir="rtl">
+                <option value="">关系</option>
+                <option value="1">父子</option>
+                <option value="2">父女</option>
+                <option value="3">母子</option>
+                <option value="4">母女</option>
+            </select>
+        </div>
+         <div class="info-item info-linkname">
+            <label for="linkname">姓名</label>
+            <input type="text" id="linkname-fitst" class="info-text linkname-fitst" placeholder="请输入姓名">
+        </div>
+        <div class="info-item info-linknum">
+            <label for="linknum-first">联系电话</label>
+            <input type="text" id="linknum-first" class="info-text linknum-first" placeholder="请输入电话">
+        </div>
+
+        <!-- 紧急联系人二 -->
+        <div class="info-item info-linkman">
+            <input type="hidden" value="" id="linkman-second-val">
+            <label for="linkman">紧急联系人二</label>
+            <select class="info-text linkman" id="linkman-second" dir="rtl">
+                <option value="">关系</option>
+                <option value="1">父子</option>
+                <option value="2">父女</option>
+                <option value="3">母子</option>
+                <option value="4">母女</option>
+            </select>
+        </div>
+         <div class="info-item info-linkname">
+            <label for="linkname">姓名</label>
+            <input type="text" id="linkname-second" class="info-text linkname-second" placeholder="请输入姓名">
+        </div>
+        <div class="info-item info-linknum info-linknum-second">
+            <label for="linknum-second">联系电话</label>
+            <input type="text" id="linknum-second" class="info-text linknum-second" placeholder="请输入电话">
+        </div>
+      </div>
+    </div>
+    <!-- 注册页底部 -->
+    <div class="footer">
+        <a class="btn-submit" id="submit">下一步</a>
+    </div>
+   </div>
+   <script src="./js/jquery.min.js"></script>
+   <script src="./js/fastclick.js""></script>
+   <script src="./js/LArea-address.js""></script>
+   <script src="./js/LAreaData1.js""></script>
+   <script src="./js/util.js"></script>
+   <script src="./js/mami-info.js"></script>
+</body>
+</html>
