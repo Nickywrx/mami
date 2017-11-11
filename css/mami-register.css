@@ -70,10 +70,13 @@
 }
 .con .identify .identify-btn{
   position: relative;
-  width: 2.4rem;
+  width: 2.6rem;
   padding-left: 0.4rem;
   text-align: right;
   color: #666666;
+  background: #fff;
+  border: none;
+  outline: none;
 }
 .con .identify .identify-btn::after{
   content: "";

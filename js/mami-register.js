@@ -35,8 +35,10 @@ var register = {
         this.bindEvent();
     },
     bindEvent : function(){
-        var _this = this;
-        var flag  = true;
+        var _this = this,
+            flag  = true,
+            sign = true,
+            timer = null;
         // 点击提交个人注册信息
         $('#submit').click(function(){
             _this.submit();
@@ -48,6 +50,8 @@ var register = {
                 identifyText   = $('.identify-text'),
                 randomNum      = Math.floor(Math.random()*1000+9000),
                 timer          = null;
+            clearInterval(timer);
+            $(this).attr('disabled','disabled')
             timer = setInterval(function(){
                 time--;
                 $(_this).text(time+"秒后重新发送");
@@ -55,6 +59,7 @@ var register = {
                     clearInterval(timer);
                     $(_this).text("重新发送");
                     identifyText.text(randomNum);
+                    $(_this).removeAttr('disabled');
                 }
             },1000)
         });
