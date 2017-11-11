@@ -70,6 +70,7 @@
   text-align: right;
   color: #1a1a1a;
   font-size: 0.3rem;
+  background: #fff;
 }
 .person-info .con .info-item .info-text.education,
 .person-info .con .info-item .info-text.linkman{

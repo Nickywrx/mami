@@ -59,7 +59,7 @@ var register = {
                     clearInterval(timer);
                     $(_this).text("重新发送");
                     identifyText.text(randomNum);
-                    $(_this).removeAttr('disabled');
+                    $(_this).removeAttr('disabled');s
                 }
             },1000)
         });
