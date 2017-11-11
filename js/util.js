@@ -12,14 +12,16 @@ var _mm = {
         };
         if('id-cart' === type){
             var result = false;
-            if(!(/^[1-9]\d{7}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}$/.test(value))){
-                result = true
+            if(/^[1-9]\d{7}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}$/.test(value)){
+                result = true;
+                return result;
+            }else if(/^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{4}$/.test(value)){
+                result = true;
+                return result;
+            }else{
+                return result;
             }
-            if(!(/^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{4}$/.test(value))){
-                result = true
             }
-            return result;
-        };
     }
 }
 _mm.fastclick();
